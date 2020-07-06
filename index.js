@@ -275,7 +275,7 @@ class Earth {
 	}
 
 	// Lookup user info by number
-	async lookupNumber (number, options = {}) => {
+	async lookupNumber (number, options = {}) {
 
 		if (typeof number === 'undefined') {
 			throw Error('Must specify number');
