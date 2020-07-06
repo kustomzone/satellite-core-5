@@ -1,6 +1,6 @@
-const Directory = require('@satellite-earth/dev-directory');
-const Clock = require('@satellite-earth/dev-clock');
-const utils = require('@satellite-earth/dev-utils');
+const Directory = require('@satellite-earth/directory');
+const Clock = require('@satellite-earth/clock');
+const utils = require('@satellite-earth/utils');
 const sigUtil = require('eth-sig-util');
 const Web3 = require('web3');
 
