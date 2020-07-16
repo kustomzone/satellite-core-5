@@ -110,10 +110,10 @@ class Earth {
 			// Create HttpProvider with optional basic auth params
 			if (options.httpBasicAuthParams) {
 				const { username, password } = options.httpBasicAuthParams;
-				const auth = `Basic ${Buffer.from(`${username || ''}:${password}`).toString('base64')}`;
+				const value = `Basic ${Buffer.from(`${username || ''}:${password}`).toString('base64')}`;
 				this.provider = new Web3.providers.HttpProvider(
 					options.httpProviderUrl,
-					{ headers: [ { name: 'Authorization', auth } ] }
+					{ headers: [ { name: 'Authorization', value } ] }
 				);
 			} else {
 				this.provider = new Web3.providers.HttpProvider(options.httpProviderUrl);
